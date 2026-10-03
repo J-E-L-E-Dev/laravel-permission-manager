@@ -1,0 +1,55 @@
+name: Package verification
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        php: ['8.2', '8.3', '8.4']
+        dependencies: [lowest, latest]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          extensions: mbstring, pdo_sqlite, dom, xml
+          coverage: none
+          tools: composer:v2
+      - run: composer validate --strict
+      - if: matrix.dependencies == 'lowest'
+        run: composer update --prefer-lowest --prefer-stable --no-interaction --prefer-dist
+      - if: matrix.dependencies == 'latest'
+        run: composer update --prefer-stable --no-interaction --prefer-dist
+      - run: composer test
+      - run: composer analyse
+      - run: vendor/bin/pint --test
+      - run: find src config database routes tests phpstan -name '*.php' -print0 | xargs -0 -n1 php -l
+  mariadb:
+    runs-on: ubuntu-latest
+    services:
+      mariadb:
+        image: mariadb:10.6
+        env:
+          MARIADB_ROOT_PASSWORD: disposable-ci-only
+        ports: ['3306:3306']
+        options: >-
+          --health-cmd="healthcheck.sh --connect --innodb_initialized"
+          --health-interval=10s --health-timeout=5s --health-retries=10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          extensions: mbstring, pdo_mysql, pdo_sqlite, dom, xml
+          coverage: none
+          tools: composer:v2
+      - run: composer install --no-interaction --prefer-dist
+      - run: php tests/Support/run-mariadb.php
+        env:
+          LPM_TEST_HOST: 127.0.0.1
+          LPM_TEST_PORT: '3306'
+          LPM_TEST_USERNAME: root
+          LPM_TEST_PASSWORD: disposable-ci-only

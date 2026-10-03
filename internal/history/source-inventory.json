@@ -1,0 +1,930 @@
+[
+  {
+    "path": "app/Actions/Auth/ResetPasswordAction.php",
+    "sha256": "4a8953da4e57c84b51b0267ca4dd7836f7c2f97b077d6a345fd60dcc5fbcc1bb",
+    "lines": 24,
+    "public_methods": [
+      "execute"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "app/Actions/Roles/SyncRolePermissionsAction.php",
+    "sha256": "1da9d365b672367fc9bc37ea023cf69e0acf36e750e395a4cd6fe70573779c37",
+    "lines": 35,
+    "public_methods": [
+      "execute"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "app/Actions/Users/DeleteUserAction.php",
+    "sha256": "1e7a96b91297fb5b9065d9804a914e08a2c2eb7dbbdb46f6320c4fb2bb5e10b1",
+    "lines": 30,
+    "public_methods": [
+      "execute"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "app/Actions/Users/SaveUserAction.php",
+    "sha256": "5dcffe52c786316ca85a94d9f72eab7c8d55bbc9bdf9a59ffbc8937a9aa13025",
+    "lines": 60,
+    "public_methods": [
+      "execute"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "app/Actions/Users/UpdateOwnProfileAction.php",
+    "sha256": "9e889a6397c85486100284543eface0d49b7b473932a37f554b6cab7d738ebba",
+    "lines": 40,
+    "public_methods": [
+      "execute"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "app/Console/Commands/ProvisionDelegationPolicies.php",
+    "sha256": "876b437b97121788a3b99d4fd37e0ae446dc1c35feb9bbbf1b3e68101532d780",
+    "lines": 42,
+    "public_methods": [
+      "handle"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "app/Data/DelegationAuthoritySnapshot.php",
+    "sha256": "6b62702d80d8c96b0ebf3c08743346fd87d5e81321dffa0768291c6968a669b7",
+    "lines": 20,
+    "public_methods": [
+      "__construct"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "app/Http/Controllers/Api/V1/AuthController.php",
+    "sha256": "0ea81cea987ea91144274c6ebcb5c516f54037685931ec8c10a99d388b5b4460",
+    "lines": 106,
+    "public_methods": [
+      "__construct",
+      "login",
+      "forgotPassword",
+      "resetPassword",
+      "me",
+      "updateProfile",
+      "logout"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "app/Http/Controllers/Api/V1/DelegationPolicyController.php",
+    "sha256": "c8a7db62d9b90ff26cb72d20f31a7c81042f2a8cfb2344ccfa490fb027d5f3f8",
+    "lines": 56,
+    "public_methods": [
+      "__construct",
+      "index",
+      "show",
+      "store",
+      "update",
+      "syncPermissions",
+      "assign"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "app/Http/Controllers/Api/V1/PermissionController.php",
+    "sha256": "141f6ffd41779cb88f6a554d4a38c658faecf570dddb28c8eb0dc5d2b0988d9b",
+    "lines": 37,
+    "public_methods": [
+      "__construct",
+      "index"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "app/Http/Controllers/Api/V1/RoleController.php",
+    "sha256": "11199f546bce73af2206338f78324c9c769cfb970eb0eda98df7dd7e0b1b886f",
+    "lines": 87,
+    "public_methods": [
+      "__construct",
+      "index",
+      "syncPermissions",
+      "store",
+      "update"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "app/Http/Controllers/Api/V1/UserController.php",
+    "sha256": "cfddadf4c430ccf018c12f9d210895f220432110135821f1f4267a92a9fa8d4a",
+    "lines": 112,
+    "public_methods": [
+      "__construct",
+      "index",
+      "store",
+      "show",
+      "update",
+      "destroy"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "app/Http/Middleware/EnsurePolicyManager.php",
+    "sha256": "f86e8a9aa9fb4c8cf81b232fbf8b3d05e448a8bc149c2074441393e9180bc823",
+    "lines": 19,
+    "public_methods": [
+      "handle"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "app/Http/Middleware/EnsureRoleListAccess.php",
+    "sha256": "d7a054d28264ccbb37d65bb5ac6612f9100e22704250e35d6f2d7cd1f4565697",
+    "lines": 27,
+    "public_methods": [
+      "handle"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "app/Http/Middleware/EnsureRoleOrPermission.php",
+    "sha256": "7d54dcf3c4f1bc97f5ce3e8ef86219068c6e263c450cde3e9330b4f880d8ad24",
+    "lines": 21,
+    "public_methods": [
+      "handle"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "app/Http/Requests/Auth/UpdateProfileRequest.php",
+    "sha256": "05a56cd79803f2b8cf6ce893922879e542cf9552637cb54412d925b91a379df2",
+    "lines": 23,
+    "public_methods": [
+      "authorize",
+      "rules"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "app/Http/Requests/DelegationPolicies/AssignRoleDelegationPolicyRequest.php",
+    "sha256": "eb890a8307c08456e2cde73675edf141a39df008448e06c3f402b4c6b221d4bb",
+    "lines": 21,
+    "public_methods": [
+      "authorize",
+      "rules"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "app/Http/Requests/DelegationPolicies/StoreDelegationPolicyRequest.php",
+    "sha256": "649c97947fbb8efac7230ae93818ecfaa8ec5000bbdb64067a146ce2d6e2cace",
+    "lines": 26,
+    "public_methods": [
+      "authorize",
+      "rules"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "app/Http/Requests/DelegationPolicies/SyncDelegationPolicyPermissionsRequest.php",
+    "sha256": "4c437708719279d8c4e8336178b7414c6965a90436f71f76345c2d7505584727",
+    "lines": 23,
+    "public_methods": [
+      "authorize",
+      "rules"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "app/Http/Requests/DelegationPolicies/UpdateDelegationPolicyRequest.php",
+    "sha256": "69c49f986bd93356594c572e4bc1fc19c83e4fc6fff9d7ebd0a13150b0b9e8ad",
+    "lines": 24,
+    "public_methods": [
+      "authorize",
+      "rules"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "app/Http/Requests/Permissions/ListPermissionsRequest.php",
+    "sha256": "38c8978a3af6790ee969330476bd6fafa3646751b8641d6ec8651e2993a31929",
+    "lines": 19,
+    "public_methods": [
+      "authorize",
+      "rules"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "app/Http/Requests/Roles/ListRolesRequest.php",
+    "sha256": "ae691478e00a405eac2ad0c87e1817cbff32d5f79c99126aac17253d3fccdcdb",
+    "lines": 29,
+    "public_methods": [
+      "authorize",
+      "rules",
+      "validationData"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "app/Http/Requests/Roles/StoreRoleRequest.php",
+    "sha256": "05aa3ef4c5d54efbc0c94f42c2baab68157ecad91b176aee6e9985fa53412997",
+    "lines": 26,
+    "public_methods": [
+      "authorize",
+      "rules"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "app/Http/Requests/Roles/SyncRolePermissionsRequest.php",
+    "sha256": "4a7160be82d7b9b6de5fcd41cdc87ca5f154067f8bb52419cdf8ffbf5e45cf0c",
+    "lines": 19,
+    "public_methods": [
+      "authorize",
+      "rules"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "app/Http/Requests/Roles/UpdateRoleRequest.php",
+    "sha256": "60d08c58928a5a436e87110b4f5a03bc0ca1d3e73166652f0d091aa4780d3b1a",
+    "lines": 24,
+    "public_methods": [
+      "authorize",
+      "rules"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "app/Http/Requests/Users/ListUsersRequest.php",
+    "sha256": "073cdda97a3041b9f1d743c5cef7a612eb709498e1be3865fe442b68bd3913f7",
+    "lines": 25,
+    "public_methods": [
+      "authorize",
+      "rules"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "app/Http/Requests/Users/StoreUserRequest.php",
+    "sha256": "1399e121de2d50f2c126d928a8866500e1dbc634322cff0d24317e649b0e11e6",
+    "lines": 22,
+    "public_methods": [
+      "authorize",
+      "rules"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "app/Http/Requests/Users/UpdateUserRequest.php",
+    "sha256": "a0a2ff5db16113ad2e37c18ac4d2264751ea7f413440c2d631529af3b5683447",
+    "lines": 23,
+    "public_methods": [
+      "authorize",
+      "rules"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "app/Http/Resources/DelegationPolicyResource.php",
+    "sha256": "50f9033651d02e090872e479c0088e60f1951dcd11da28a1a6ea3aa42ffbda53",
+    "lines": 25,
+    "public_methods": [
+      "toArray"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "app/Models/DelegationPolicy.php",
+    "sha256": "098e94316aa26e224454c70b92a8bd4242b1afe216350d850f26bded408ae96a",
+    "lines": 32,
+    "public_methods": [
+      "permissions",
+      "roles"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "app/Models/Role.php",
+    "sha256": "739cefa0c70ca8348598e0244691c3ee61e22fde126ddac6862c639cea82bf80",
+    "lines": 18,
+    "public_methods": [
+      "delegationPolicy"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "app/Models/User.php",
+    "sha256": "f7fda095d7066992edd9af879d815d04c9b00f9f07eb6058a2e04efff6de687a",
+    "lines": 99,
+    "public_methods": [
+      "companies",
+      "enrolledCourses",
+      "enrolledCareers",
+      "learningLicenses",
+      "courseProgress",
+      "sendPasswordResetNotification"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "app/Services/DelegationPolicyProvisioningService.php",
+    "sha256": "071b035458c34bd83d16f7395f00dbe824ecce7d3b2d199777e8447022735e74",
+    "lines": 118,
+    "public_methods": [
+      "__construct",
+      "run"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "app/Services/DelegationPolicyService.php",
+    "sha256": "d865a1603256225ba01921a1e6b566454f1e5ec081a92c5f0c82b13ea18ab692",
+    "lines": 106,
+    "public_methods": [
+      "__construct",
+      "list",
+      "show",
+      "create",
+      "update",
+      "syncPermissions",
+      "assignToRole"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "app/Services/PermissionDelegationService.php",
+    "sha256": "950ea8088e667fd8eeacd03f1c36502f76e772b77c8270ecb46820efc409b6af",
+    "lines": 518,
+    "public_methods": [
+      "__construct",
+      "isAdmin",
+      "isPolicyManager",
+      "reservedRoleNames",
+      "isReservedRoleName",
+      "sensitiveRoleNames",
+      "snapshot",
+      "delegablePermissionIds",
+      "delegablePermissions",
+      "roleUsagePermissions",
+      "roleDelegablePermissions",
+      "assertCanReplacePermissions",
+      "assertCanAssignRole",
+      "assertCanReplaceRoles",
+      "assertCanManagePolicyPermissions",
+      "assertPolicyAssignable",
+      "assertCanChangeRolePolicy",
+      "assertCanMutatePolicy",
+      "assertCanAssignPolicyToRole",
+      "policyManagerActor",
+      "capabilities",
+      "policyCapabilities",
+      "assertNoSelfEscalation",
+      "assertCanUseRoleIdentity",
+      "targetAuthorityFootprint",
+      "assertCanControlAccount",
+      "assertCanDeleteAccount",
+      "candidateRoleAuthorityIds",
+      "assertCanChangeRoleUsage",
+      "assertCanChangeRoleLevel"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "app/Services/PermissionService.php",
+    "sha256": "d0393693e6af5ce6ca0e9d09f0ad42eec691fa26e1b8f81d02a7a2c0eefaeb07",
+    "lines": 22,
+    "public_methods": [
+      "list"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "app/Services/RbacMutationAuthorization.php",
+    "sha256": "19ba419c55a3ecdd2b3d8e255e11cf6a6cec38818eb0272d93399236112eeae1",
+    "lines": 163,
+    "public_methods": [
+      "__construct",
+      "actor",
+      "userSave",
+      "userDelete",
+      "roleCreate",
+      "roleUpdate",
+      "rolePermissions"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "app/Services/RbacWriteTransaction.php",
+    "sha256": "4c051d0a3834a11a3136a6492fa1fec83faeabe080da47776b4cd133b9957925",
+    "lines": 33,
+    "public_methods": [
+      "run"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "app/Services/RoleHierarchy.php",
+    "sha256": "8964f9772185393020429dadd664de2decf0dfbb1bba46bb2112bed7818fc781",
+    "lines": 123,
+    "public_methods": [
+      "__construct",
+      "canEditUser",
+      "canAssignRoles",
+      "canEditRole",
+      "canManageRoleLevel"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "app/Services/RoleService.php",
+    "sha256": "3977bb38be903a9e41205570b05b70becf4ab96b872f0f0c2a44c1fa1e3ac071",
+    "lines": 139,
+    "public_methods": [
+      "assignableForDelegationPolicy",
+      "assignableForUser",
+      "list",
+      "syncPermissions",
+      "create",
+      "update"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "app/Services/UserService.php",
+    "sha256": "82ef718463de47927ed0707d5cebd6b40dde19cbf23ebc416b540849717f82f2",
+    "lines": 47,
+    "public_methods": [
+      "list",
+      "show",
+      "create",
+      "update",
+      "delete"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "config/delegation.php",
+    "sha256": "3367381c86862b3742eae7cd7b0cff4497a573d6e20ae03f03bd6cd1e079e849",
+    "lines": 15,
+    "public_methods": [],
+    "test_cases": []
+  },
+  {
+    "path": "config/permission.php",
+    "sha256": "2b8de09b7a6ab993a1bea037a1952ed066fba7c766d97b480b5ee74007ee5d9d",
+    "lines": 207,
+    "public_methods": [],
+    "test_cases": []
+  },
+  {
+    "path": "database/migrations/2026_08_19_135450_create_permission_tables.php",
+    "sha256": "9be723cec2a8625506c8e0073a4bbabca1fbb08dbbbfb67ab55fe3e93d7298f0",
+    "lines": 135,
+    "public_methods": [
+      "up",
+      "down"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "database/migrations/2026_08_19_170000_add_description_to_permissions_table.php",
+    "sha256": "55354669c4ad56f349d57875c6110c5abb032a9d0353ceb936855607b7495434",
+    "lines": 21,
+    "public_methods": [
+      "up",
+      "down"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "database/migrations/2026_08_20_110000_add_description_to_roles_table.php",
+    "sha256": "0d0c660da694ffd46ec6af5a350ac9fd7386ccbc65e611b6294e644fe070d888",
+    "lines": 25,
+    "public_methods": [
+      "up",
+      "down"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "database/migrations/2026_08_20_130000_add_permissions_to_api_endpoints_table.php",
+    "sha256": "4d42ded9c5d78d845587e5211723101c10d7c7ff7f325fd332b26e6888ef1255",
+    "lines": 23,
+    "public_methods": [
+      "up",
+      "down"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "database/migrations/2026_08_20_150000_add_level_to_roles_table.php",
+    "sha256": "a360e803ff1cf8180c2dfaa01e72cbf1842faaade2732afe8c09c3ef49661227",
+    "lines": 23,
+    "public_methods": [
+      "up",
+      "down"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "database/migrations/2026_09_10_000000_create_delegation_policy_tables.php",
+    "sha256": "f848de45e9b5ab883660b88ad0f004a281c288aa091ba62dc40fe48c3128900f",
+    "lines": 43,
+    "public_methods": [
+      "up",
+      "down"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "database/migrations/2026_09_10_010000_create_rbac_write_locks_table.php",
+    "sha256": "11f7cd8905e108c4c48f98c692226671325509eb0ca1e1993ca8a4205ef68554",
+    "lines": 24,
+    "public_methods": [
+      "up",
+      "down"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "database/seeders/PermissionsSeeder.php",
+    "sha256": "1141508d2ccd53a16002dc27a772f54e17fe7d8ea364b1def3b29fa8960fd936",
+    "lines": 87,
+    "public_methods": [
+      "run"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "database/seeders/RoleHierarchyPermissionsSeeder.php",
+    "sha256": "a95253bb54be3a7609f5c672137e2edaaac72ec78d8432e3a5568badde17c4db",
+    "lines": 113,
+    "public_methods": [
+      "run"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "database/seeders/RolesAndUsersSeeder.php",
+    "sha256": "618adcc3a7572b7d66b861d29900045ea728f515a7d15e8689a4c19cc921dfe6",
+    "lines": 41,
+    "public_methods": [
+      "run"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "docs/d01-permission-catalog-policy.md",
+    "sha256": "059921f6619fac281147edf9cd9eba8451a06ee980fbf05d7b30ce11cd92dd02",
+    "lines": 73,
+    "public_methods": [],
+    "test_cases": []
+  },
+  {
+    "path": "docs/fa1-single-guard-audit.md",
+    "sha256": "4be0c906a8c6547bf4ab9435fbd77e52b2f9188d29f43a8faa393d207b261b07",
+    "lines": 60,
+    "public_methods": [],
+    "test_cases": []
+  },
+  {
+    "path": "docs/h02-etapa3-motor.md",
+    "sha256": "c9d11b908ff57d09c4b88f38a89df606d7459d732594be3bccb06d94c0429338",
+    "lines": 136,
+    "public_methods": [],
+    "test_cases": []
+  },
+  {
+    "path": "docs/h02-etapa4-escrituras.md",
+    "sha256": "1a920c2dabebc79f08726b46d941224879e907117a7b2ea5f4d02b1e056b56a9",
+    "lines": 161,
+    "public_methods": [],
+    "test_cases": []
+  },
+  {
+    "path": "docs/h02-etapa5-policies.md",
+    "sha256": "92574c14b482e21b5371265e1f4af76d56c7b1f7cbcc529fa5005ffa9ba04030",
+    "lines": 214,
+    "public_methods": [],
+    "test_cases": []
+  },
+  {
+    "path": "docs/h02-etapa6-contexto-roles.md",
+    "sha256": "97e4ab5e8bb1ee18d617aaec1335453a1cf4228323828efa054635c3ab04b577",
+    "lines": 38,
+    "public_methods": [],
+    "test_cases": []
+  },
+  {
+    "path": "docs/h02-etapa7-provision-cli.md",
+    "sha256": "1bf36aeb7bbc9a888753593888cb1e0942a2ab89e4b652bb8e1e335e7adf99d3",
+    "lines": 145,
+    "public_methods": [],
+    "test_cases": []
+  },
+  {
+    "path": "docs/h02-etapa8-reauditoria-final.md",
+    "sha256": "bbf3eca73c11cc6aeb74436e6d037917040f4173fee2eaba3108e1052d0c0eca",
+    "lines": 393,
+    "public_methods": [],
+    "test_cases": []
+  },
+  {
+    "path": "routes/api.php",
+    "sha256": "64af23924bf9e5a14faf8603b32cbcb429382a9c85ad433f33e23de668246d86",
+    "lines": 177,
+    "public_methods": [],
+    "test_cases": []
+  },
+  {
+    "path": "tests/Feature/DelegationConfigurationTest.php",
+    "sha256": "3b80f4e21af883e6782d046fc29c7b4353978abea4f48bbd9bbd0e140b84681f",
+    "lines": 35,
+    "public_methods": [],
+    "test_cases": [
+      "parses manager names without creating roles and supports cached configuration values"
+    ]
+  },
+  {
+    "path": "tests/Feature/DelegationPolicyHttpTest.php",
+    "sha256": "84db41ad28379a9b2d206f8b10eb52f66dcdb1b4e5703fd3c245edae8a130b41",
+    "lines": 434,
+    "public_methods": [],
+    "test_cases": [
+      "does not borrow foreign guard admin hierarchy when projecting consumer members",
+      "provides contextual role replacement candidates while preserving the general catalog",
+      "does not grant contextual user capabilities from policy manager status alone",
+      "blocks multistep authority fabrication while allowing valid admin intervention",
+      "rejects own ordinary consumer mutations even without a sensitive role identity",
+      "rolls back sync and metadata when persistence fails after authorization",
+      "rolls back a role policy association if the save fails",
+      "keeps shared association changes local to the affected consumer",
+      "treats an inactive admin-loaded permission as protected dormant authority",
+      "revalidates stale actors and policy data in direct services",
+      "enforces module entry independently of functional permissions or hierarchy",
+      "guards all four writes at HTTP entry",
+      "creates explicit policies atomically within scope without linking roles",
+      "allows a manager without D to prepare only empty policies and preserves defaults",
+      "rejects malformed policy input without partial persistence",
+      "keeps metadata separate and slug stable",
+      "checks current content for activation and deactivation",
+      "checks C union F even when inactive",
+      "validates replacement fields and bindings",
+      "checks every shared consumer and its multi-role members",
+      "forbids all owned-role policy changes for managers including noops",
+      "checks assignment state scope hierarchy and members without changing usage",
+      "denies direct internal callers without manager authority",
+      "rolls back an infrastructure failure after a policy insert",
+      "reports delegation separately from functional permissions with fresh multi-role union",
+      "reports ordinary and nonexistent configured manager flags correctly",
+      "exposes explicit policy resources and batched capabilities without pivots or users",
+      "does not grow listing queries per policy or consumer"
+    ]
+  },
+  {
+    "path": "tests/Feature/DelegationPolicyInfrastructureTest.php",
+    "sha256": "39e843c31e447e998cc19ab5659bcf99bc706eeceae8986dc09bde40abc00c36",
+    "lines": 157,
+    "public_methods": [],
+    "test_cases": [
+      "defaults policies to inactive in the database and casts explicit activation",
+      "requires an explicit slug and does not regenerate it when name changes",
+      "enforces unique slugs",
+      "relates configured permissions and multiple roles to a shared policy",
+      "reads only the operative web guard through the policy permission relation",
+      "never populates policies or memberships from new roles or permissions including admin",
+      "rejects repeated policy permission pairs but permits sharing permissions across policies",
+      "cascades permission deletion to memberships without deleting policies",
+      "cascades unreferenced policy deletion to memberships without deleting permissions",
+      "restricts deletion of a referenced policy and preserves its role and memberships",
+      "preserves multirol and Spatie assign sync and configured model bindings",
+      "keeps HTTP bindings representations and authorized operations with explicit delegation scope"
+    ]
+  },
+  {
+    "path": "tests/Feature/DelegationPolicyMigrationTest.php",
+    "sha256": "2cbb22c9bcfb82cc549d64d72684b208a07aa6546b002ccc69ec115dbd4ba0b0",
+    "lines": 59,
+    "public_methods": [],
+    "test_cases": [
+      "rolls back and reapplies without backfill or changing existing Spatie rows"
+    ]
+  },
+  {
+    "path": "tests/Feature/DelegationPolicyProvisioningTest.php",
+    "sha256": "d6c71be0328fc1659e16c02e3e4b48275f722b0f74c8a9f1cf0f6809723140e2",
+    "lines": 213,
+    "public_methods": [],
+    "test_cases": [
+      "creates and links an active empty structural policy with no functional authority copied",
+      "keeps admin bypass without physical grants or a structural policy",
+      "does not derive authority from policy manager configuration",
+      "preserves configured Q name and activity when relinking or rerunning",
+      "ignores dynamic and technical roles and unrelated manual policies",
+      "does not touch users memberships direct permissions or functional role grants",
+      "aborts the entire plan on structural conflicts without rewriting or suffixing identities",
+      "rolls back policies and associations on an intermediate database failure",
+      "previews create link and unchanged without any DML including the lock row",
+      "fails without repairing a missing coordination row",
+      "exposes a read only command preview and a separate explicit execution",
+      "returns command failure on conflicts or missing infrastructure"
+    ]
+  },
+  {
+    "path": "tests/Feature/DelegationSeederBoundaryTest.php",
+    "sha256": "b76ea5d03114be33f876be9f67fac342ff6dde5dbefa5f97df9bf9909322083e",
+    "lines": 67,
+    "public_methods": [],
+    "test_cases": [
+      "does not preload or alter policy authority when the privileged seeder runs",
+      "documents that demo role assignment can transfer already configured D without writing Q"
+    ]
+  },
+  {
+    "path": "tests/Feature/Fa1SingleGuardInvariantTest.php",
+    "sha256": "21bea6ded95849d3c9134b3ea4abe6d08d7dbfa7c8fcf2310f8401d636665ad4",
+    "lines": 88,
+    "public_methods": [],
+    "test_cases": [
+      "defines web as the sole authentication and RBAC guard",
+      "forces web when role HTTP payloads try to create or update another guard",
+      "rejects assigning a fabricated foreign guard role through the users API",
+      "keeps every productive seeder identity in web",
+      "has no routed permission writer that can expose latent CRUD"
+    ]
+  },
+  {
+    "path": "tests/Feature/H02FinalAdjacentBoundariesTest.php",
+    "sha256": "ab8eaf3c33794ee26c90f2432af96f3191dad78e17810adcfd85d012ae825830",
+    "lines": 43,
+    "public_methods": [],
+    "test_cases": [
+      "records legacy foreign-guard admin reads while proving H02 mutations remain denied",
+      "records that M09 now revokes an issued token without adding authority"
+    ]
+  },
+  {
+    "path": "tests/Feature/H02FinalAdversarialSequencesTest.php",
+    "sha256": "01fd36418ec659ac1c82574c5513d72fccd1bef89763a0916acef3fda1674cfd",
+    "lines": 173,
+    "public_methods": [],
+    "test_cases": [
+      "cannot launder a forbidden grant through a newly created role and controlled account",
+      "cannot grow authority after creating populating activating and associating an initially empty policy",
+      "cannot strip outgoing authority and then take over credentials in several requests",
+      "cannot awaken dormant outside authority after harmless metadata changes",
+      "cannot capture sensitive identities by creation renaming or role replacement",
+      "rechecks every member after otherwise valid shared-policy setup",
+      "rejects a previously discovered candidate after scope revocation",
+      "discards mass-assignment authority keys from the own-profile endpoint",
+      "cannot acquire a new permission created after the current authority was configured"
+    ]
+  },
+  {
+    "path": "tests/Feature/PermissionCatalogPolicyTest.php",
+    "sha256": "d9db8a4d5beb68c549511826b74ce55ccfb6398f1087502f104a6439033a1b0d",
+    "lines": 59,
+    "public_methods": [],
+    "test_cases": [
+      "keeps catalog reads authorized and supports existing assignment and delegation",
+      "exposes only GET and HEAD for the permission catalog with no item writers",
+      "materializes the versioned web catalog idempotently without dynamic API writers"
+    ]
+  },
+  {
+    "path": "tests/Feature/PermissionDelegationHttpIsolationTest.php",
+    "sha256": "b74b413150a1586849f714af299c07cb01fe857cb26e1964f597acda1173642d",
+    "lines": 46,
+    "public_methods": [],
+    "test_cases": [
+      "preserves all seven legitimate mutations after explicitly provisioning delegation scope"
+    ]
+  },
+  {
+    "path": "tests/Feature/PermissionDelegationServiceTest.php",
+    "sha256": "e35221f7c363bb6423d503edece6881b7491643fc0363a278b2bafdc54349b3e",
+    "lines": 408,
+    "public_methods": [],
+    "test_cases": [
+      "gives exact web admin all current and subsequently created permissions without physical grants",
+      "does not recognize foreign guard or similar admin and manager identities",
+      "computes D as a deduplicated union without direct or functional grants",
+      "checks complete permission replacement including revocation and retained outside permissions",
+      "keeps omitted permission and role relations distinct from explicit empty replacements",
+      "rejects nonexistent malformed and foreign permission IDs even for admin",
+      "checks both role P and active Q independently",
+      "evaluates final and removed roles including multirol replacements",
+      "recognizes configured managers without increasing authority or creating identities",
+      "requires manager status and authority over stored and final policy contents even inactive",
+      "checks every shared policy consumer through unchanged RoleHierarchy",
+      "uses immutable pre-write authority for candidate self changes",
+      "rejects indirect self growth through shared policy or another role without persisting candidates",
+      "never upgrades a pre-write non-admin snapshot using newly loaded admin identity",
+      "blocks every own role policy change except admin including same smaller or null",
+      "validates active candidates and authority over incoming and outgoing policy contents",
+      "rejects an inactive candidate even for admin and reloads its active flag",
+      "reserves exact manager names even before provisioning and forbids non-admin renames",
+      "blocks qualitative ticket documentation and configured sensitive identities even with empty P and Q",
+      "checks direct P Q multirol and reserved account authority for control and deletion",
+      "reloads actor memberships policy linkage contents and active status despite loaded relations",
+      "fails closed for foreign guard roles and malformed memberships during transfers",
+      "exhaustively preserves C union F and self monotonicity for subsets of three permissions",
+      "preserves P union Q containment for every pair of singleton or empty sets",
+      "allows a manager to change another manageable role policy without writing it",
+      "rejects ambiguous foreign guard names before composing the existing hierarchy",
+      "reloads target footprint and qualitative ACL identities on each check",
+      "rejects nonexistent roles policies and unpersisted actors without treating them as admin",
+      "checks exact permission guards even when the database uses case insensitive comparison"
+    ]
+  },
+  {
+    "path": "tests/Feature/RbacDelegationEnforcementTest.php",
+    "sha256": "2f10c36146f1f7006b079feb4b0c060b6036112ef1904f0902caaae487d5597f",
+    "lines": 332,
+    "public_methods": [],
+    "test_cases": [
+      "creates users only with explicit authority including the implicit client role",
+      "preserves ordinary omitted authority and L02 nulls with legacy multirol and outside grants",
+      "checks direct permission grant revoke and retain without converting inherited grants",
+      "checks final and removed roles before replacing a users roles",
+      "blocks self role authority growth before persisting any candidate field",
+      "protects credential and active operations using the current account footprint",
+      "revokes tokens when deactivating an account within scope",
+      "checks the complete footprint when deleting and preserves pivots on denial",
+      "keeps self delete 422 even for admin",
+      "creates roles atomically within D and never accepts policy ids",
+      "rejects capturing configured but nonexistent manager names and ordinary renames",
+      "allows description only despite outside P and rejects hierarchy growth atomically",
+      "checks C union F on role permissions including shared sensitive members",
+      "keeps invalid payloads and bindings separate from delegation denials",
+      "rolls back a sync failure after role creation and exposes an unexpected error as 500",
+      "rolls back a user persistence failure and never sends a welcome notification",
+      "protects direct service and action callers with actor and functional authorization",
+      "fails closed without policy while permitting ordinary phone edits"
+    ]
+  },
+  {
+    "path": "tests/Feature/RoleDelegationCandidatesTest.php",
+    "sha256": "4226e0d1dc2f479d1f07a1ffc7bd6df1d75120eefe25fb027c93af8d4395c0e3",
+    "lines": 110,
+    "public_methods": [],
+    "test_cases": [
+      "enforces the contextual entry without granting general role reads",
+      "rejects invalid candidate contexts before filtering",
+      "projects the same authorization as association for each initial state",
+      "does not return foreign guard or ambiguous role identities",
+      "revalidates a previously eligible association after authority changes"
+    ]
+  },
+  {
+    "path": "tests/Feature/RoleHierarchyAuthorizationTest.php",
+    "sha256": "cf6e66da57f394c8e50c212383aed3636e4c979c48f83a08f5a8e19fdb3d0936",
+    "lines": 145,
+    "public_methods": [
+      "test_support_can_edit_itself_and_clients_but_cannot_manage_another_support_or_promote_a_client",
+      "test_level_two_role_can_manage_its_own_role_but_not_another_level_two_role",
+      "test_support_can_edit_a_dynamic_lower_level_role_but_not_a_higher_one",
+      "test_client_cannot_manage_users_or_roles_even_with_an_administrative_permission"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "tests/Feature/RolePermissionsSeederTest.php",
+    "sha256": "a618e851a5c1f814b98207f3e410efde7d3ca8bc2d8ebd15258d5d4fba8f2f9b",
+    "lines": 58,
+    "public_methods": [
+      "test_it_assigns_functional_permissions_to_each_non_administrator_role",
+      "test_it_seeds_the_complete_permission_catalog_and_assigns_it_to_admin",
+      "test_permissions_endpoint_can_return_the_complete_assignable_collection"
+    ],
+    "test_cases": []
+  },
+  {
+    "path": "tests/Fixtures/policy-concurrency-worker.php",
+    "sha256": "5a74f3d2d0e9fd8468593603ca951f4eb4e958b8cf38d0240912e76aac96307b",
+    "lines": 47,
+    "public_methods": [],
+    "test_cases": []
+  },
+  {
+    "path": "tests/Fixtures/rbac-concurrency-worker.php",
+    "sha256": "8fa306138870732e50a5f88f1ac88769cf0a7ce105053573a26b6161e8dbe1cd",
+    "lines": 49,
+    "public_methods": [],
+    "test_cases": []
+  },
+  {
+    "path": "tests/Integration/RbacMariaDbConcurrencyTest.php",
+    "sha256": "166e35f3427aa7af6cf330bead4b8f5313c9b0ab806e32605fe546d91a2ed332",
+    "lines": 153,
+    "public_methods": [],
+    "test_cases": [
+      "revalidates policy writes after concurrent scope or consumer changes",
+      "serializes a concurrent scope change before authorizing the waiting writer",
+      "rejects an ambient MariaDB snapshot instead of authorizing against old repeatable reads"
+    ]
+  }
+]

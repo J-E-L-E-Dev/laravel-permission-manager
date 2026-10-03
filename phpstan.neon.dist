@@ -1,0 +1,22 @@
+includes:
+    - vendor/larastan/larastan/extension.neon
+    - vendor/nesbot/carbon/extension.neon
+    - phpstan/config.php
+
+parameters:
+    level: 5
+    paths:
+        - src
+        - config
+        - database/migrations
+        - routes
+    tmpDir: .phpstan.cache
+    # modelKeys() intentionally hydrates configured models/casts and respects their scopes.
+    noUnnecessaryCollectionCall: false
+    ignoreErrors:
+        # Model is the public parameter type; Models::user validates HasRoles at runtime.
+        # These four trait methods cannot be expressed as a native PHP intersection with a trait.
+        -
+            message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Model::(roles|permissions|syncRoles|syncPermissions)\(\)\.$#'
+            identifier: method.notFound
+            path: src/*

@@ -1,0 +1,23 @@
+* text=auto eol=lf
+/.github export-ignore
+/internal export-ignore
+/tests export-ignore
+/phpstan export-ignore
+/phpstan.neon.dist export-ignore
+/phpunit.xml export-ignore
+/phpunit.mariadb.xml export-ignore
+/.gitignore export-ignore
+/.gitattributes export-ignore
+/vendor export-ignore
+/.env export-ignore
+/.env.* export-ignore
+/composer.lock export-ignore
+/.phpunit.cache export-ignore
+/.phpunit.result.cache export-ignore
+/.phpstan.cache export-ignore
+/coverage export-ignore
+*.log export-ignore
+*.sqlite export-ignore
+*.sqlite-* export-ignore
+*.tmp export-ignore
+*.zip export-ignore

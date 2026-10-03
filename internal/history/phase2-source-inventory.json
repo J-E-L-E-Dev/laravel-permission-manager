@@ -1,0 +1,107 @@
+[
+  {
+    "path": "app/Services/AuthService.php",
+    "sha256": "f97157b7f07da4660a6342ee7c703f2d97ee3596acae04ee8b54316b5ee5bf84",
+    "lines": 27
+  },
+  {
+    "path": "app/Actions/Auth/CreateSessionTokenAction.php",
+    "sha256": "75b14a9ac82a2aece277e49e05c4265b9beb18bb6db3e7d0b0eabbd8a61480c4",
+    "lines": 25
+  },
+  {
+    "path": "app/Actions/Auth/RevokeCurrentTokenAction.php",
+    "sha256": "b1036a9514118b4b3e759a08c879864392804accf2dc33272e2ce4584ddde25f",
+    "lines": 19
+  },
+  {
+    "path": "app/Actions/Auth/ResetPasswordAction.php",
+    "sha256": "4a8953da4e57c84b51b0267ca4dd7836f7c2f97b077d6a345fd60dcc5fbcc1bb",
+    "lines": 23
+  },
+  {
+    "path": "app/Actions/Users/UpdateOwnProfileAction.php",
+    "sha256": "9e889a6397c85486100284543eface0d49b7b473932a37f554b6cab7d738ebba",
+    "lines": 39
+  },
+  {
+    "path": "app/Actions/Users/SaveUserAction.php",
+    "sha256": "5dcffe52c786316ca85a94d9f72eab7c8d55bbc9bdf9a59ffbc8937a9aa13025",
+    "lines": 59
+  },
+  {
+    "path": "app/Actions/Users/DeleteUserAction.php",
+    "sha256": "1e7a96b91297fb5b9065d9804a914e08a2c2eb7dbbdb46f6320c4fb2bb5e10b1",
+    "lines": 29
+  },
+  {
+    "path": "app/Services/DelegationPolicyProvisioningService.php",
+    "sha256": "071b035458c34bd83d16f7395f00dbe824ecce7d3b2d199777e8447022735e74",
+    "lines": 117
+  },
+  {
+    "path": "app/Services/RoleService.php",
+    "sha256": "3977bb38be903a9e41205570b05b70becf4ab96b872f0f0c2a44c1fa1e3ac071",
+    "lines": 138
+  },
+  {
+    "path": "app/Services/UserService.php",
+    "sha256": "82ef718463de47927ed0707d5cebd6b40dde19cbf23ebc416b540849717f82f2",
+    "lines": 46
+  },
+  {
+    "path": "app/Services/DelegationPolicyService.php",
+    "sha256": "d865a1603256225ba01921a1e6b566454f1e5ec081a92c5f0c82b13ea18ab692",
+    "lines": 105
+  },
+  {
+    "path": "app/Http/Controllers/Api/V1/AuthController.php",
+    "sha256": "0ea81cea987ea91144274c6ebcb5c516f54037685931ec8c10a99d388b5b4460",
+    "lines": 105
+  },
+  {
+    "path": "app/Http/Controllers/Api/V1/UserController.php",
+    "sha256": "cfddadf4c430ccf018c12f9d210895f220432110135821f1f4267a92a9fa8d4a",
+    "lines": 111
+  },
+  {
+    "path": "app/Http/Controllers/Api/V1/DelegationPolicyController.php",
+    "sha256": "c8a7db62d9b90ff26cb72d20f31a7c81042f2a8cfb2344ccfa490fb027d5f3f8",
+    "lines": 55
+  },
+  {
+    "path": "app/Http/Middleware/EnsureRoleListAccess.php",
+    "sha256": "d7a054d28264ccbb37d65bb5ac6612f9100e22704250e35d6f2d7cd1f4565697",
+    "lines": 26
+  },
+  {
+    "path": "app/Http/Middleware/EnsurePolicyManager.php",
+    "sha256": "f86e8a9aa9fb4c8cf81b232fbf8b3d05e448a8bc149c2074441393e9180bc823",
+    "lines": 18
+  },
+  {
+    "path": "tests/Feature/RoleDelegationCandidatesTest.php",
+    "sha256": "4226e0d1dc2f479d1f07a1ffc7bd6df1d75120eefe25fb027c93af8d4395c0e3",
+    "lines": 109
+  },
+  {
+    "path": "tests/Feature/H02FinalAdversarialSequencesTest.php",
+    "sha256": "01fd36418ec659ac1c82574c5513d72fccd1bef89763a0916acef3fda1674cfd",
+    "lines": 172
+  },
+  {
+    "path": "tests/Feature/PermissionCatalogPolicyTest.php",
+    "sha256": "d9db8a4d5beb68c549511826b74ce55ccfb6398f1087502f104a6439033a1b0d",
+    "lines": 58
+  },
+  {
+    "path": "tests/Feature/PermissionDelegationHttpIsolationTest.php",
+    "sha256": "b74b413150a1586849f714af299c07cb01fe857cb26e1964f597acda1173642d",
+    "lines": 45
+  },
+  {
+    "path": "routes/api.php",
+    "sha256": "64af23924bf9e5a14faf8603b32cbcb429382a9c85ad433f33e23de668246d86",
+    "lines": 176
+  }
+]

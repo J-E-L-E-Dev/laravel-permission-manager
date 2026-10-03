@@ -1,0 +1,30 @@
+<?php
+
+namespace Spatie\Permission\Models;
+
+/**
+ * Configured roles must use HasDelegationPolicy; Models::role validates that boundary.
+ * @property int $id
+ * @property string $name
+ * @property string $guard_name
+ * @property int|null $level
+ * @property string|null $description
+ * @property int|null $delegation_policy_id
+ * @method \Illuminate\Database\Eloquent\Relations\BelongsTo<\Ahinest\LaravelPermissionManager\Models\DelegationPolicy, $this> delegationPolicy()
+ */
+class Role extends \Illuminate\Database\Eloquent\Model
+{
+    /** @return \Illuminate\Database\Eloquent\Relations\BelongsToMany<Permission, $this> */
+    public function permissions(): \Illuminate\Database\Eloquent\Relations\BelongsToMany {}
+}
+
+/**
+ * @property int $id
+ * @property string $name
+ * @property string $guard_name
+ */
+class Permission extends \Illuminate\Database\Eloquent\Model {}
+
+namespace Ahinest\LaravelPermissionManager\Models;
+
+class DelegationPolicy extends \Illuminate\Database\Eloquent\Model {}

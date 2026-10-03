@@ -1,0 +1,14 @@
+/vendor/
+/.phpunit.cache/
+/.phpunit.result.cache
+/tests/.runtime/
+/composer.lock
+/.phpstan.cache/
+/.env
+/.env.*
+/coverage/
+*.log
+*.sqlite
+*.sqlite-*
+*.tmp
+*.zip
