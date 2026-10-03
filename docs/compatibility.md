@@ -21,11 +21,21 @@ Version 1.0.0 declares PHP ^8.2, Illuminate support/database/validation ^12.0 an
 
 The version matrix was executed on 22 September 2026. Spatie 6.25.0 was both the declared minimum and newest permitted 6.x resolved then; Laravel 12.69.2 was the current resolved Laravel. These are recorded versions, not claims about today's registry. The PHP 8.3/8.4 Windows binaries were verified against official SHA-256 checksums. See [verification status](status.md) for suites and dates.
 
-## Development resolution
+## Development tooling
 
-Development dependencies: Testbench ^10.0, Pest ^3.8, Pint ^1.24, PHPStan ^2.1 and Larastan ^3.0. Composer must choose a Larastan 3.x compatible with Laravel 12; Larastan 3.0.0 itself requires Laravel 11. Minimum pins cannot be assumed to coexist.
+Development dependencies use Testbench ^10.0, Pest ^3.8, Pint ^1.24,
+PHPStan ^2.2.16 and Larastan ^3.12.2.
 
-The minimum development graph used Laravel 12.0.1, Testbench 10.0.0, Larastan 3.1.0 and PHPStan 2.1.3. Resolve on each PHP runtime: the PHP 8.2 lock contained a nette/schema version whose upper PHP bound failed platform checks on newer runtimes. Separate resolution produced passing PHP 8.3/8.4 platform checks. Old dependencies emit PHP 8.4 deprecations.
+PHPStan and Larastan are development tools and are not installed as runtime
+dependencies of applications that require this package.
+
+The CI `lowest` matrix continues to resolve the lowest supported runtime
+dependencies for PHP, Laravel and Spatie Permission. The static-analysis tools
+retain their explicitly supported minimum versions so the same analysis
+semantics are used across the compatibility matrix.
+
+Dependencies are resolved independently on PHP 8.2, 8.3 and 8.4 because
+transitive platform constraints may differ between runtimes.
 
 ## Dependency security and CI
 

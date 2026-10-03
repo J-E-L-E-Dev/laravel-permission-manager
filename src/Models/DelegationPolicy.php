@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\Pivot;
 use Spatie\Permission\Models\Permission;
 use Spatie\Permission\Models\Role;
 
@@ -31,9 +32,11 @@ class DelegationPolicy extends Model
     /**
      * Permisos almacenados de la política, incluso cuando está inactiva.
      *
-     * La relación no filtra guards inválidos: las comprobaciones de autorización deben detectarlos.
+     * La relación conserva las asociaciones persistidas sin ocultar permisos de otro
+     * guard, de modo que las comprobaciones de autorización puedan detectar una
+     * configuración inconsistente.
      *
-     * @return BelongsToMany<Permission, $this>
+     * @return BelongsToMany<Permission, $this, Pivot>
      */
     public function permissions(): BelongsToMany
     {

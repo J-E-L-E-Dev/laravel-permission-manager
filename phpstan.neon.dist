@@ -11,11 +11,11 @@ parameters:
         - database/migrations
         - routes
     tmpDir: .phpstan.cache
-    # modelKeys() intentionally hydrates configured models/casts and respects their scopes.
+    # modelKeys() hidrata intencionalmente los modelos configurados y respeta sus casts y scopes.
     noUnnecessaryCollectionCall: false
     ignoreErrors:
-        # Model is the public parameter type; Models::user validates HasRoles at runtime.
-        # These four trait methods cannot be expressed as a native PHP intersection with a trait.
+        # Model es el tipo público del parámetro; Models::user valida HasRoles en ejecución.
+        # Estos cuatro métodos del trait no pueden expresarse mediante una intersección nativa de PHP con un trait.
         -
             message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Model::(roles|permissions|syncRoles|syncPermissions)\(\)\.$#'
             identifier: method.notFound
