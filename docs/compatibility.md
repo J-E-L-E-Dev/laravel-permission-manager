@@ -41,4 +41,5 @@ transitive platform constraints may differ between runtimes.
 
 Historical minimum consumer/development graphs reported respectively 38 advisories in 10 packages and 42 in 12. They are disposable compatibility experiments, not production recommendations. The current graph reported none at installation on the verification date. Functional success does not certify dependency security; keep production dependencies patched and run composer audit in the consuming application.
 
-The CI matrix resolves lowest/latest dependencies on PHP 8.2/8.3/8.4. Composer security policy can select different minimum versions. Declared ranges are not evidence that every transitive combination works. Remote workflow execution is not part of the recorded evidence; consult [verification status](status.md).
+The CI matrix resolves lowest/latest dependencies on PHP 8.2/8.3/8.4. Composer security policy can select different minimum versions. Declared ranges are not evidence that every transitive combination works. GitHub Actions was remotely verified in PHP 8.2, 8.3 and 8.4 with
+lowest/latest resolutions, plus MariaDB 10.6; consult [verification status](status.md).

@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.0.0] - 2026-10-02
+## [1.0.0] - 2026-10-16
 
 - Explicit P/Q/D delegation and configurable administrative hierarchy over Spatie Permission.
 - Authorized role, policy, user assignment and account lifecycle services with fresh checks under a shared transaction lock.

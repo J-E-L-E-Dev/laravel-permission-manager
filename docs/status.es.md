@@ -2,7 +2,7 @@
 
 [English version](status.md)
 
-Versión: **1.0.0**. Fecha de revisión documental: **2026-10-02**. La verificación se limita a los entornos y suites siguientes; no constituye una certificación de seguridad.
+Versión: **1.0.0**. Fecha de revisión documental: **2026-10-16**. La verificación se limita a los entornos y suites siguientes; no constituye una certificación de seguridad.
 
 ## Entornos
 
@@ -36,6 +36,6 @@ La instalación independiente utiliza Composer con VCS/archivos aislados, sin el
 
 ## CI y límites
 
-GitHub Actions define PHP 8.2/8.3/8.4 × lowest/latest y una tarea MariaDB 10.6 separada. El workflow está validado localmente; no se registra ejecución remota. La instalación desde un tag publicado no forma parte de esta verificación. Seguir el [proceso de publicación](releasing.es.md) al publicar.
+GitHub Actions define PHP 8.2/8.3/8.4 × lowest/latest y una tarea MariaDB 10.6 separada. GitHub Actions fue verificado remotamente en PHP 8.2, 8.3 y 8.4 con resoluciones lowest/latest, además de MariaDB 10.6. La instalación desde un tag publicado no forma parte de esta verificación. Seguir el [proceso de publicación](releasing.es.md) al publicar.
 
 No están verificados servidores MySQL reales, otras versiones MariaDB, PHP fuera de la matriz, clientes SMTP/móviles externos ni rendimiento bajo carga. Los mínimos históricos tienen avisos de seguridad; el éxito funcional no recomienda su uso productivo. SQL no cooperante, transacciones entre conexiones y adaptadores arbitrarios quedan fuera de las garantías. Los errores de caché posteriores al commit y el DDL parcialmente confirmado requieren reconciliación o recuperación revisada; consultar [seguridad](security.es.md) y [migraciones](migrations.es.md).
